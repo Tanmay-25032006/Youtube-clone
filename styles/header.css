@@ -1,0 +1,220 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    flex-direction: row;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:56px;
+    background-color: white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color: lightgray;
+}
+.sidebar{
+    position: fixed;
+    top: 56px;
+    left:0;
+    bottom:0;
+    background-color: white;
+    width:72px;
+    
+    border-right-width:1px;
+    border-right-style:none;
+    border-right-color: rgb(230, 228, 228);
+    box-shadow: 10px 10px 10px 5px rgb(255, 254, 254);
+
+    
+}
+.sidebar-link{
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:10px;
+}
+.sidebar-link:hover{
+    background-color:lightgray;
+}
+.sidebar-link img {
+    height:24px;
+    width:24px
+}
+.sidebar-link div{
+    font-size:10px;
+    font-family: Roboto;
+    margin-top:7px;
+}
+
+.left-section{
+ width:500px;
+ height:40px;
+ margin-right:10px;
+ display:flex;
+ align-items:center;
+}
+.hamburger-menu{
+  height:24px;
+  width:24px;
+  padding-left:25px;
+  padding-right:10px;
+}
+.youtube-logo{
+    height:20px;
+    margin-left:15px;
+}
+.middle-section{
+    flex:1;
+    height:40px;
+    max-width:500px;
+    margin-left:10px;
+    margin-right:60px;
+    display:flex;
+    align-items:center;
+ 
+
+}
+.Search{
+    flex:1;
+    height:40px;
+    width:0px;
+    display:flex;
+    font-size:20px;
+    padding-left:15px;
+    margin-left:0px;
+    margin-right:0px;
+    border:1px solid lightgray;
+    outline:none;
+  
+
+}
+.Search:focus{
+ border-color:rgb(0, 183, 255);
+}
+
+
+.search-button{
+    height:44px;
+    width:64px;
+    border:1px solid lightgray;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    position: relative;
+     
+
+}
+.search-button:hover{
+    background-color: rgb(248, 246, 246);
+}
+.search-button .tooltip,.voice-button .tooltip,.create-icon-container .tooltip,.youtube-apps-container .tooltip,.notifications-icon-container .tooltip{
+    position:absolute;
+    background-color:gray;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-style:Roboto;
+    color:white;
+    bottom:-30px;
+    border-radius:2px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    
+
+}
+.search-button:hover .tooltip,.voice-button:hover .tooltip,.create-icon-container:hover .tooltip,.youtube-apps-container:hover .tooltip,.notifications-icon-container:hover .tooltip{
+    opacity:1;
+} 
+
+.voice-button{
+    height:40px;
+    width:40px;
+    display:flex;
+    align-items:center;
+    border:none;
+    background-color: #f8f8f8;
+    border-radius:50%;
+    margin-left:10px;
+
+}
+.search button, .voice-button,.create-icon-container,.youtube-apps-container,.notifications-icon-container{
+    display:flex;
+    justify-content: center;
+    font-family:Roboto;
+}
+
+.search-icon{
+    height:24px;
+    width:24px;
+    padding-left:12px;
+    padding-right:12px;
+
+
+}
+
+.voice-search{
+    height:24px;
+    width:24px;
+    padding-left:2.5px;
+    
+
+}
+.right-section{
+    width:180px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left:40px;
+    flex-shrink:0;
+
+}
+.create-icon{
+    height:24px;
+    width:24px;
+    margin-right: 10px;;
+}
+.apps-icon{
+    height:24px;
+    width:24px;
+    margin-left:15px;
+}
+.notifications-icon{
+    height:24px;
+    width:24px;
+    margin-left:15px;
+    margin-right:10px;
+}
+.profile-picture{
+    height:32px;
+    width: 32px;
+    margin-left:15px;
+    margin-right:10px;
+}
+.notifications-icon-container{
+    position:relative;
+}
+.notifications-count{
+    position:absolute;
+    background-color:rgb(187, 4, 4);
+    color:white;
+    padding-left:6px;
+    padding-right:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    font-family:Roboto;
+    font-size:11px;
+    border-radius:50%;
+    margin-right:1px;
+    right:2px;
+    top:-2px;
+
+
+}
